@@ -1,0 +1,355 @@
+body{
+    font-family: Arial, Helvetica;
+    background: slategrey;
+    background-size: 100%;
+    flex-wrap:wrap;
+    padding: 2%;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background-color: steelblue;
+    border-radius: 10px ;
+    border: 3px solid black;
+    max-height: 125px;
+    padding: 10px;
+    background-image: linear-gradient(steelblue,lightblue);
+}
+
+.titulo{
+    color: blue; 
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+}
+
+.logoPrincipal{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 10px;
+    border: 5px outset silver;
+    animation-name: animaLogo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+@keyframes animaLogo{  
+    0% {width: 70px;}
+    50% { width: 100px;}
+    100% {width: 70px;}
+}
+
+.hLinea1{
+    border: 1px solid darkblue;    
+}
+
+.principio{
+    width: 90%;
+    padding: 30px;
+    background-color:lightsteelblue;
+    border: lightblue 2px solid;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.principio ul{
+    list-style: none;
+}
+
+.menu >li{
+    position:relative;
+    display: inline-block;
+    margin: 5px 50px;
+
+}
+
+.menu >li >a {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color:green;
+    background-color:lightskyblue;
+    width: 150px;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid lightblue;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    transform: all 300ms;
+}
+.menu li a:hover{
+    color:black;
+    background-color: steelblue;
+    transition:background-color 1s;
+    transform: scale(1.15);
+}
+
+.subMenu{
+    position:absolute;
+    color: red;
+    background-color: lightblue;
+    padding: 15px;
+    width: 100%;
+    display: none;
+    z-index: 2;
+}
+.subMenu li a{
+    display:block;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.menu li:hover .subMenu{
+    display: block;
+}
+
+.segundoContenido{
+    width: 100%;
+    height: 250px;
+}
+
+h2{
+    color:white;
+    margin:100px
+}
+
+h2 ul li{
+    color: yellowgreen;
+}
+
+#wsp1{
+    width:40px; 
+    height: 30px;
+}
+#fb{
+    width: 22px;
+    height: 20px;
+}
+#inst{
+    width: 20px;
+    height: 20px;
+}
+.tercerContenido{
+    position: relative;
+    top: 20px;
+    border: 2px solid white;
+    background-image: linear-gradient(silver,white);
+    width: 40rem;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer ul li{
+    margin: 10px;
+    padding:5px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;   
+}
+
+footer ul li a:hover{
+    transition:background-color 1s;
+    transform: scale(1.10);
+}
+
+.barra{
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 150px;
+    position: sticky;
+    top: 10px;
+    z-index: 20;
+    transform: skew(10deg,5deg);
+}
+.memeUno{
+    display: grid;
+    grid-template-columns:auto auto;
+    transform: all 300ms;
+}
+
+.imgMemeUno{
+    width: 450px;
+    height: 450px;
+    border: 3px lightblue solid;
+    margin-top: 30px;
+    margin-left: 400px
+
+}
+ .imgMemeUno:hover{
+    transition:background-color 1s;
+    transform: scale(1.05);
+}
+
+.meme{
+    width: 450px;
+    height: 450px;
+    border: 3px lightblue solid;
+    margin: 30px;
+
+}
+
+.meme:hover{
+    transition:background-color 1s;
+    transform: scale(1.05);
+}
+/*@media only screen and (min-width:768px){
+    .primerContenido{
+        background-color: black; 
+    }
+}
+@media only screen and (min-width:600px){
+    .menu{
+        background-color: yellow; 
+    }
+    
+}
+@media only screen and (min-width:480px){
+    table{
+        background-color: red; 
+    }
+    
+}*/
+.imgBanner{
+    width: 80%;
+    height: 500px;
+    border: blue solid 1px;
+    margin: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns:auto auto auto; 
+    align-content: space-around;  /* arrastre*/
+}
+
+.caja{
+    border:5px solid blue;
+    background-color: white;
+    line-height: 40px;
+    margin: 30px;
+    /*margin: 20px;   */
+}
+
+#imgA{
+    float: left;
+    margin: 10px;
+}
+.contenidoVentas{
+    color: black;
+}
+.serviciosVideo1{
+    border: solid 4px blue;
+    border-radius: 20px;
+    margin: 50px;
+    float: left;
+}
+.serviciosVideo2{
+    border: solid 4px blue;
+    border-radius: 20px;
+    margin: 50px;
+    float: left;
+}
+
+.servicio{
+    font-size: 30px;
+    color: lightgoldenrodyellow;
+}
+.pVideo1{
+    background-image:linear-gradient(lightskyblue,lightgreen);
+    width: 1200px;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    padding: 150px;
+    border-radius :20px;
+    border: solid 3px lightblue;
+    margin: 50px;
+}
+.pVideo2{
+    background-image:linear-gradient(lightskyblue,lightgreen);
+    width: 1200px;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    padding: 150px;
+    border-radius :20px;
+    border: solid 3px lightblue;
+    margin: 50px;
+}
+
+.serviciosLista{
+    display: grid;
+    grid-template-columns:auto auto auto; 
+    align-content: space-around;
+}
+.servicios{
+    color: blue;
+    font-size: 25px;
+    line-height: 50px;
+    list-style-type: none;
+    border:5px solid lightblue;
+    border-radius: 15px;
+    background-color: white;
+    margin: 5px;
+    padding-left: 15px;
+}
+
+.servicios:hover{
+    transition:background-color 1s;
+    transform: scale(1.10);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.container div{
+    background-color: lightgreen;
+    width: 100px;
+    height: 30px;
+    margin:10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    border:1px solid black;
+}
+.contactoUbi{
+    font-size: 22px;
+    color: blue;
+}
+
+.quienesSomos{
+    font-size: 30px;
+    color: blue;
+}
+#mov{
+    width: 300px;
+    text-align: center;
+    color: lightsalmon;
+    background: lightblue;
+    border: solid 5px lightskyblue;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: space-around;
+    margin: 30px;
+}
+#miviob{
+    background:lightyellow;
+    width: 1000px;
+    font-size: 25px;
+    color: blueviolet;
+    border-radius: 10px;
+    border: 2px solid  rgb(224, 232, 236);
+    padding: 15px;
+
+}
